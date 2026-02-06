@@ -34,9 +34,9 @@ export default function Home() {
           {/* Step Cards */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-16">
             {/* Step 1 Card */}
-            <div className="bg-white/80 backdrop-blur-sm border border-gray-200/50 rounded-3xl overflow-hidden hover:shadow-lg transition-shadow">
+            <div className="bg-white/80 backdrop-blur-sm border border-[#0099C0] rounded-3xl overflow-hidden hover:shadow-lg transition-shadow">
               {/* Colored Header */}
-              <div className="bg-blue-500 text-white px-6 py-3">
+              <div className="bg-[#0099C0] text-white px-6 py-3">
                 <h3 className="text-sm font-bold tracking-wider">STEP 1</h3>
               </div>
 
@@ -65,9 +65,9 @@ export default function Home() {
             </div>
 
             {/* Step 2 Card */}
-            <div className="bg-white/80 backdrop-blur-sm border border-gray-200/50 rounded-3xl overflow-hidden hover:shadow-lg transition-shadow">
+            <div className="bg-white/80 backdrop-blur-sm border border-[#27B1A8] rounded-3xl overflow-hidden hover:shadow-lg transition-shadow">
               {/* Colored Header */}
-              <div className="bg-teal-500 text-white px-6 py-3">
+              <div className="bg-[#27B1A8] text-white px-6 py-3">
                 <h3 className="text-sm font-bold tracking-wider">STEP 2</h3>
               </div>
 
@@ -96,9 +96,9 @@ export default function Home() {
             </div>
 
             {/* Step 3 Card */}
-            <div className="bg-white/80 backdrop-blur-sm border border-gray-200/50 rounded-3xl overflow-hidden hover:shadow-lg transition-shadow">
+            <div className="bg-white/80 backdrop-blur-sm border border-[#F2BF36] rounded-3xl overflow-hidden hover:shadow-lg transition-shadow">
               {/* Colored Header */}
-              <div className="bg-yellow-400 text-gray-800 px-6 py-3">
+              <div className="bg-[#F2BF36] text-gray-800 px-6 py-3">
                 <h3 className="text-sm font-bold tracking-wider">STEP 3</h3>
               </div>
 
@@ -135,7 +135,7 @@ export default function Home() {
           <div className="flex items-center gap-4 mb-8">
             <p className="text-sm text-gray-500">Step 1 of 2</p>
             <div className="flex-1 max-w-xs h-2 bg-gray-200 rounded-full overflow-hidden">
-              <div className="h-full w-1/2 bg-teal-600 rounded-full"></div>
+              <div className="h-full w-1/2 bg-[#0099C0] rounded-full"></div>
             </div>
           </div>
           
@@ -155,7 +155,7 @@ export default function Home() {
               />
             </div>
 
-            <button className="px-6 py-2 bg-teal-600 text-white font-semibold rounded-full hover:bg-teal-700 transition-colors flex items-center gap-2">
+            <button className="px-6 py-2 bg-[#006B8F] text-white font-semibold rounded-full hover:bg-teal-700 transition-colors flex items-center gap-2">
               Next
               <span>→</span>
             </button>
@@ -196,12 +196,12 @@ export default function Home() {
             <div className="flex flex-col justify-start">
               <nav className="space-y-2">
                 <div>
-                  <Link href="/" className="text-sm font-semibold text-teal-600 hover:text-teal-700 transition-colors">
+                  <Link href="/" className="text-sm font-semibold text-[#006B8F] hover:text-teal-700 transition-colors">
                     Behavioral Test
                   </Link>
                 </div>
                 <div>
-                  <Link href="/how-it-works" className="text-sm font-semibold text-teal-600 hover:text-teal-700 transition-colors">
+                  <Link href="/how-it-works" className="text-sm font-semibold text-[#006B8F] hover:text-teal-700 transition-colors">
                     How it Works
                   </Link>
                 </div>

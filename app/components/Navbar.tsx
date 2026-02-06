@@ -8,7 +8,7 @@ export default function Navbar() {
   const pathname = usePathname();
 
   return (
-    <nav className="sticky top-0 z-50 flex items-center justify-center px-8 py-4 bg-white border-b border-gray-200 relative">
+    <nav className="sticky top-0 z-50 flex items-center justify-center px-8 py-4 bg-white border-b border-gray-200">
       {/* Logo - Positioned on the left */}
       <div className="flex items-center gap-2 absolute left-8">
         <Image
