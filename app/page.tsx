@@ -21,10 +21,10 @@ export default function Home() {
               />
             </div>
 
-            <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+            <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4 font-poppins">
               Behavioral Test
             </h1>
-            <p className="text-lg md:text-xl text-gray-600 mb-8">
+            <p className="text-lg md:text-xl text-gray-600 mb-8 font-inter">
               Understand Student Behavior Through Data
             </p>
           </div>
@@ -41,18 +41,18 @@ export default function Home() {
       <section className="px-4 py-16 bg-white">
         <div className="max-w-6xl mx-auto">
           <div className="flex items-center gap-4 mb-8">
-            <p className="text-sm text-gray-500">Step 1 of 2</p>
+            <p className="text-sm text-gray-500 font-inter">Step 1 of 2</p>
             <div className="flex-1 max-w-xs h-2 bg-gray-200 rounded-full overflow-hidden">
               <div className="h-full w-1/2 bg-[#0099C0] rounded-full"></div>
             </div>
           </div>
           
           <div className="max-w-md">
-            <h2 className="text-2xl font-bold text-gray-700 mb-6">
+            <h2 className="text-2xl font-bold text-gray-700 mb-6 font-poppins">
               What&apos;s your General Weighted Average (GWA)?
             </h2>
 
-            <div className="mb-6">
+            <div className="mb-6 font-inter">
               <label className="block text-sm font-medium text-gray-900 mb-2">
                 GWA
               </label>
@@ -66,7 +66,7 @@ export default function Home() {
               />
             </div>
 
-            <button className="px-6 py-2 bg-[#006B8F] text-white font-semibold rounded-full hover:bg-teal-700 transition-colors flex items-center gap-2">
+            <button className="px-6 py-2 bg-[#006B8F] text-white font-semibold rounded-full hover:bg-teal-700 transition-colors flex items-center gap-2 font-inter">
               Next
               <span>→</span>
             </button>

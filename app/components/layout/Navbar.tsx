@@ -17,14 +17,14 @@ export default function Navbar() {
           width={32}
           height={32}
         />
-        <span className="text-xl font-bold text-gray-900">Statera</span>
+        <span className="text-xl font-bold text-gray-900 font-poppins">Statera</span>
       </div>
 
       {/* Navigation Links - Centered */}
       <div className="flex items-center gap-6">
         <Link
           href="/"
-          className={`px-6 py-2 rounded-lg font-medium transition-colors ${
+          className={`px-6 py-2 rounded-lg font-bold transition-colors font-inter ${
             pathname === '/' 
               ? 'bg-cyan-100 text-cyan-700' 
               : 'text-gray-700 hover:bg-cyan-50 hover:text-cyan-600'
@@ -34,13 +34,13 @@ export default function Navbar() {
         </Link>
         <Link
           href="/how-it-works"
-          className={`px-6 py-2 rounded-lg font-medium transition-colors ${
+          className={`px-6 py-2 rounded-lg font-bold transition-colors font-inter ${
             pathname === '/how-it-works' 
               ? 'bg-cyan-100 text-cyan-700' 
               : 'text-gray-700 hover:bg-cyan-50 hover:text-cyan-600'
           }`}
         >
-          How it Works
+          Meet the Team
         </Link>
       </div>
     </nav>

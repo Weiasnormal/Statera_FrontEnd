@@ -4,7 +4,7 @@ import Link from "next/link";
 export default function Footer() {
   return (
     <footer className="px-4 relative" style={{backgroundImage: 'url(/Footer.svg)', backgroundSize: 'cover', backgroundPosition: 'center', backgroundRepeat: 'no-repeat', paddingTop: '120px', paddingBottom: '60px'}}>
-      <div className="max-w-full mx-0 pl-6">
+      <div className="max-w-full mx-0 pl-6 font-inter">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-16 max-w-5xl">
           {/* Left Column */}
           <div>
