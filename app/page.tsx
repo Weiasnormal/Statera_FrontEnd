@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Footer from "./components/layout/footer";
 import CardsModal from "./components/ui/cards_modal";
+import Form_1 from "./(public)/how-it-works/forms/form_1";
 
 export default function Home() {
   return (
@@ -37,8 +38,10 @@ export default function Home() {
         </div>
       </section>
 
+      <Form_1 />
+
       {/* Form Section */}
-      <section className="px-4 py-16 bg-white">
+      {/* <section className="px-4 py-16 bg-white">
         <div className="max-w-6xl mx-auto">
           <div className="flex items-center gap-4 mb-8">
             <p className="text-sm text-gray-500 font-inter">Step 1 of 2</p>
@@ -72,7 +75,7 @@ export default function Home() {
             </button>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Footer */}
       <Footer />
