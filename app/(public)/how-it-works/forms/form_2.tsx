@@ -1,6 +1,8 @@
 'use client';
 
 import { useState } from 'react';
+import UpperDesign from "@/app/components/ui/Upper_Design";
+import Footer from "@/app/components/layout/footer";
 
 interface Form2Props {
     onNext?: () => void;
@@ -42,7 +44,8 @@ export default function Form2({ onNext }: Form2Props) {
     };
 
     return (
-        <>
+        <div className="min-h-screen bg-white">
+            <UpperDesign />
             <section className="px-4 py-16 bg-white">
                 <div className="max-w-7xl mx-auto">
                     <div className="max-w-2xl">
@@ -88,6 +91,7 @@ export default function Form2({ onNext }: Form2Props) {
                     </div>
                 </div>
             </section>
-        </>
+            <Footer />
+        </div>
     )
 }

@@ -1,11 +1,9 @@
 import Image from "next/image";
-import Navbar from "@/app/components/layout/Navbar";
-import Footer from "@/app/components/layout/footer";
 
 export default function LoadingPage() {
   return (
     <div className="flex flex-col min-h-screen">
-      <Navbar />
+     { /*<Navbar /> */} 
             
             <main className="flex-1 flex flex-col items-center justify-center bg-linear-to-b from-white to-gray-50 px-4">
               <div className="flex flex-col items-center gap-6">
@@ -27,7 +25,6 @@ export default function LoadingPage() {
               </div>
             </main>
             
-            <Footer />
           </div>
         );
 }

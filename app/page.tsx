@@ -1,14 +1,13 @@
-import Footer from "./components/layout/footer";
-import UpperDesign from "./components/ui/Upper_Design";
 import Form_1 from "./(public)/how-it-works/forms/form_1";
 
 export default function Home() {
   return (
-    <div className="min-h-screen bg-white">
-      <UpperDesign />
+    <Form_1 />
+  );
+}
 
-      <Form_1 />
-
+{/* ARCHIVED CODE */}
+{/*
       {/* Form Section */}
       {/* <section className="px-4 py-16 bg-white">
         <div className="max-w-6xl mx-auto">
@@ -46,8 +45,3 @@ export default function Home() {
         </div>
       </section> */}
 
-      {/* Footer */}
-      <Footer />
-    </div>
-  );
-}
