@@ -1,42 +1,11 @@
-import Image from "next/image";
 import Footer from "./components/layout/footer";
-import CardsModal from "./components/ui/cards_modal";
+import UpperDesign from "./components/ui/Upper_Design";
 import Form_1 from "./(public)/how-it-works/forms/form_1";
 
 export default function Home() {
   return (
     <div className="min-h-screen bg-white">
-      {/* Hero Section */}
-      <section className="relative px-4 py-16 md:py-24 overflow-hidden" style={{backgroundImage: 'url(/C_bg.svg)', backgroundSize: 'cover', backgroundPosition: 'top center', backgroundRepeat: 'no-repeat'}}>
-        <div className="max-w-7xl mx-auto relative z-10">
-          {/* Hero Content */}
-          <div className="text-center mb-16">
-            {/* Large Statera Logo */}
-            <div className="flex justify-center mb-8">
-              <Image
-                src="/Navbar_logo.svg"
-                alt="Statera Logo"
-                width={120}
-                height={120}
-                className="w-32 h-32"
-              />
-            </div>
-
-            <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4 font-poppins">
-              Behavioral Test
-            </h1>
-            <p className="text-lg md:text-xl text-gray-600 mb-8 font-inter">
-              Understand Student Behavior Through Data
-            </p>
-          </div>
-
-          {/* Decorative Background Shape */}
-          <div className="absolute bottom-0 right-0 w-96 h-64 bg-yellow-50/60 rounded-full blur-3xl -z-10"></div>
-
-          {/* Step Cards */}
-          <CardsModal />
-        </div>
-      </section>
+      <UpperDesign />
 
       <Form_1 />
 

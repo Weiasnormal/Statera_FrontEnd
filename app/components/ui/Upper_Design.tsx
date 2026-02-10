@@ -1,10 +1,37 @@
 import Image from "next/image";
 
-export default function CardsModal() {
+export default function UpperDesign() {
   return (
     <>
-      {/* Step Cards */}
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-16">
+      {/* Upper Design Section */}
+      <section className="relative px-4 py-16 md:py-24 overflow-hidden" style={{backgroundImage: 'url(/C_bg.svg)', backgroundSize: 'cover', backgroundPosition: 'top center', backgroundRepeat: 'no-repeat'}}>
+        <div className="max-w-7xl mx-auto relative z-10">
+          
+          <div className="text-center mb-16">
+            
+            <div className="flex justify-center mb-8">
+              <Image
+                src="/Navbar_logo.svg"
+                alt="Statera Logo"
+                width={120}
+                height={120}
+                className="w-32 h-32"
+              />
+            </div>
+
+            <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4 font-poppins">
+              Behavioral Test
+            </h1>
+            <p className="text-lg md:text-xl text-gray-600 mb-8 font-inter">
+              Understand Student Behavior Through Data
+            </p>
+          </div>
+
+          {/* Decorative Background Shape */}
+          <div className="absolute bottom-0 right-0 w-96 h-64 bg-yellow-50/60 rounded-full blur-3xl -z-10"></div>
+
+          {/* Step Cards */}
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-16">
         {/* Step 1 Card */}
         <div className="bg-transparent backdrop-blur-sm border border-[#0099C0] rounded-3xl overflow-hidden transition-shadow" style={{maxWidth: '405px', width: '100%', height: '350px'}}>
           {/* Colored Header */}
@@ -98,6 +125,8 @@ export default function CardsModal() {
           </div>
         </div>
       </div>
+        </div>
+      </section>
     </>
   );
 }
