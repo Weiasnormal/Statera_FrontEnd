@@ -9,8 +9,8 @@ export default function Navbar() {
 
   return (
     <nav className="sticky top-0 z-50 flex items-center justify-center px-8 py-4 bg-white border-b border-gray-200">
-      {/* Logo - Positioned on the left */}
-      <a
+    
+      <Link
         href="/"
         className="flex items-center gap-2 absolute left-8 hover:opacity-80 transition-opacity"
       >
@@ -23,9 +23,8 @@ export default function Navbar() {
         <span className="text-xl font-bold text-gray-900 font-poppins">
           Statera
         </span>
-      </a>
+      </Link>
 
-      {/* Navigation Links - Centered */}
       <div className="flex items-center gap-6">
         <Link
           href="/"
@@ -38,9 +37,9 @@ export default function Navbar() {
           Behavior Test
         </Link>
         <Link
-          href="/how-it-works"
+          href="/meet_the_team_page"
           className={`px-6 py-2 rounded-lg font-bold transition-colors font-inter ${
-            pathname === "/how-it-works"
+            pathname === "/meet_the_team_page"
               ? "bg-cyan-100 text-cyan-700"
               : "text-gray-700 hover:bg-cyan-50 hover:text-cyan-600"
           }`}

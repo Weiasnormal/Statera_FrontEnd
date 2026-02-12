@@ -1,4 +1,4 @@
-import Form_1 from "./(public)/how-it-works/forms/form_1";
+import Form_1 from "./(public)/forms/form_1";
 
 export default function Home() {
   return (
