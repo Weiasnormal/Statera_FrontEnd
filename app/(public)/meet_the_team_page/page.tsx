@@ -1,104 +1,36 @@
+import Image from "next/image";
 
 export default function MeetTheTeam() {
   return (
-    <div className="min-h-screen bg-white flex flex-col items-center justify-center py-16 px-4">
+    <div className="min-h-screen bg-linear-to-b from-gray-50 to-white flex flex-col items-center justify-center py-16 px-4">
       <div className="text-center mb-16">
-        <div className="flex items-baseline justify-center gap-2">
-          <h1 className="text-6xl md:text-7xl font-bold text-black">Team</h1>
-          <p className="text-xl md:text-2xl text-gray-500 font-medium">Meet the Team</p>
-        </div>
+        <h1 className="text-7xl md:text-8xl font-bold text-gray-900 mb-2">Team</h1>
+        <p className="text-2xl md:text-3xl text-gray-400 font-medium">Meet the Team</p>
       </div>
 
-      <div className="flex flex-col md:flex-row items-center justify-center gap-12 md:gap-20 max-w-6xl">
-        <div className="shrink-0 w-full md:w-auto">
-          <svg
-            width="350"
-            height="280"
-            viewBox="0 0 615 428"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-            className="w-full max-w-xs"
-          >
-            <g filter="url(#filter0_d_256_1379)">
-              <mask
-                id="mask0_256_1379"
-                style={{ maskType: 'alpha' }}
-                maskUnits="userSpaceOnUse"
-                x="21"
-                y="6"
-                width="573"
-                height="386"
-              >
-                <path
-                  d="M130.271 53.7063C107.997 54.0542 102.255 41.3128 79.9972 40.345C57.7394 39.3773 50.8226 41.613 40.6808 45.0051C17.4567 52.7729 27.4595 73.2037 22.6337 97.2122C15.8748 130.837 37.1513 150.024 34.5575 184.224C32.883 206.302 22.4888 217.512 22.6337 239.654C22.8441 271.81 33.4296 285.504 34.5575 317.642C35.5098 344.777 23.8758 348.753 34.5575 373.716C52.4755 415.59 106.035 371.77 151.54 373.716C186.878 375.227 203.627 382.698 238.874 385.64C294.127 390.251 323.398 365.141 378.738 368.56C410.731 370.536 436.61 378.756 467 368.56C510.222 354.058 529.085 397.764 558.884 373.716C573.537 361.891 581.149 352.538 587.243 334.722C597.255 305.454 572.399 287.651 573.386 256.734C574.222 230.509 585.406 217.165 587.243 190.991C589.277 162.018 578.695 145.814 581.12 116.87C582.948 95.0545 597.724 83.3382 592.721 62.0253C588.299 43.1882 576.015 36.7001 558.884 29.0195C541.286 21.13 534.7 31.1346 515.706 29.0195C495.418 26.7604 487.261 11.4799 467 8.95722C442.593 5.91825 429.756 22.7173 405.205 21.5771C385.184 20.6472 375.183 11.4632 355.282 8.95722C334.977 6.40026 323.098 5.41547 302.924 8.95722C281.148 12.7802 271.388 24.9472 249.652 29.0195C226.823 33.2968 212.913 23.6341 190.292 29.0195C164.351 35.1953 156.851 53.291 130.271 53.7063Z"
-                  fill="#D9D9D9"
-                />
-              </mask>
-              <g mask="url(#mask0_256_1379)">
-                <rect
-                  x="16.1445"
-                  y="7.29999"
-                  width="577.339"
-                  height="384.893"
-                  fill="#F2BF36"
-                />
-              </g>
-            </g>
-            <defs>
-              <filter
-                id="filter0_d_256_1379"
-                x="0.000782013"
-                y="-1.14441e-05"
-                width="614.784"
-                height="427.202"
-                filterUnits="userSpaceOnUse"
-                colorInterpolationFilters="sRGB"
-              >
-                <feFlood floodOpacity="0" result="BackgroundImageFix" />
-                <feColorMatrix
-                  in="SourceAlpha"
-                  type="matrix"
-                  values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
-                  result="hardAlpha"
-                />
-                <feOffset dy="14" />
-                <feGaussianBlur stdDeviation="10.65" />
-                <feComposite in2="hardAlpha" operator="out" />
-                <feColorMatrix
-                  type="matrix"
-                  values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"
-                />
-                <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_256_1379" />
-                <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_256_1379" result="shape" />
-              </filter>
-            </defs>
-          </svg>
+      <div className="flex flex-col md:flex-row items-center justify-center gap-12 md:gap-20 max-w-6xl w-full">
+       
+        <div className="shrink-0 w-full md:w-auto flex justify-center">
+          <Image
+            src="/Groupie.svg"
+            width={320}
+            height={320}
+            alt="Team taking a selfie"
+            className="w-80 h-auto drop-shadow-lg"
+          />
         </div>
 
-        <div className="shrink-0 w-full md:w-auto">
-          <svg
-            width="100%"
-            height="auto"
-            viewBox="0 0 1080 259"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-            className="max-w-md"
-          >
-            <path
-              d="M98.4575 258.361C80.0118 258.361 63.4824 255.366 48.8695 249.377C34.2567 243.388 22.5184 234.525 13.6549 222.787C5.03087 211.048 0.479316 196.915 0.000204687 180.385H65.3989C66.3571 189.728 69.5911 196.915 75.1009 201.945C80.6107 206.736 87.7973 209.132 96.6609 209.132C105.764 209.132 112.951 207.096 118.221 203.023C123.491 198.711 126.126 192.842 126.126 185.416C126.126 179.188 123.97 174.037 119.658 169.965C115.586 165.892 110.435 162.538 104.207 159.903C98.218 157.268 89.594 154.274 78.3349 150.92C62.0451 145.889 48.7498 140.859 38.4489 135.828C28.148 130.797 19.2844 123.371 11.8582 113.549C4.43198 103.728 0.718871 90.9113 0.718871 75.1007C0.718871 51.6242 9.22309 33.2982 26.2315 20.1227C43.24 6.70755 65.3989 -8.11704e-06 92.7082 -8.11704e-06C120.497 -8.11704e-06 142.895 6.70755 159.904 20.1227C176.912 33.2982 186.015 51.744 187.213 75.46H120.736C120.257 67.3151 117.263 60.9669 111.753 56.4153C106.243 51.6242 99.1762 49.2286 90.5522 49.2286C83.126 49.2286 77.1371 51.2649 72.5855 55.3373C68.034 59.1702 65.7582 64.7998 65.7582 72.226C65.7582 80.3709 69.5911 86.7191 77.2569 91.2707C84.9227 95.8222 96.9004 100.733 113.19 106.003C129.48 111.513 142.656 116.783 152.717 121.814C163.018 126.845 171.881 134.151 179.308 143.733C186.734 153.316 190.447 165.653 190.447 180.745C190.447 195.118 186.734 208.174 179.308 219.912C172.121 231.65 161.58 240.993 147.686 247.94C133.792 254.887 117.382 258.361 98.4575 258.361ZM1079.6 255.845H1018.15L915.382 100.254V255.845H853.936V3.59332H915.382L1018.15 159.903V3.59332H1079.6V255.845Z"
-              fill="#0099C0"
-            />
-            <path
-              d="M289.707 52.822V103.847H371.994V151.279H289.707V206.617H382.774V255.845H228.261V3.59332H382.774V52.822H289.707ZM720.977 52.822V103.847H803.265V151.279H720.977V206.617H814.045V255.845H659.531V3.59332H814.045V52.822H720.977Z"
-              fill="#27B1A8"
-            />
-            <path
-              d="M575.383 126.485C589.996 129.6 601.734 136.906 610.597 148.405C619.461 159.664 623.893 172.6 623.893 187.213C623.893 208.294 616.467 225.062 601.614 237.519C587.001 249.737 566.519 255.845 540.168 255.845H422.666V3.59332H536.215C561.848 3.59332 581.851 9.46243 596.224 21.2006C610.837 32.9389 618.143 48.8693 618.143 68.992C618.143 83.8444 614.191 96.1815 606.285 106.003C598.62 115.825 588.319 122.652 575.383 126.485ZM484.112 105.644H524.357C534.419 105.644 542.085 103.488 547.355 99.176C552.865 94.6244 555.619 88.0367 555.619 79.4127C555.619 70.7887 552.865 64.2009 547.355 59.6493C542.085 55.0978 534.419 52.822 524.357 52.822H484.112V105.644ZM529.388 206.257C539.689 206.257 547.594 203.982 553.104 199.43C558.853 194.639 561.728 187.812 561.728 178.948C561.728 170.084 558.734 163.137 552.745 158.107C546.995 153.076 538.97 150.561 528.669 150.561H484.112V206.257H529.388Z"
-              fill="#F2BF36"
-            />
-          </svg>
+        <div className="shrink-0 w-full md:w-auto flex items-center justify-center">
+          <div className="text-7xl md:text-8xl font-black tracking-wider">
+            <span className="text-cyan-500">S</span>
+            <span className="text-teal-500">E</span>
+            <span className="text-yellow-400">B</span>
+            <span className="text-teal-500">E</span>
+            <span className="text-cyan-500">N</span>
+          </div>
         </div>
       </div>
     </div>
   );
 }
+
