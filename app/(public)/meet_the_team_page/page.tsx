@@ -1,5 +1,5 @@
 
-export default function HowItWorks() {
+export default function MeetTheTeam() {
   return (
     <div className="min-h-screen bg-white flex flex-col items-center justify-center py-16 px-4">
       <div className="text-center mb-16">
