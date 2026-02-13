@@ -20,7 +20,7 @@ export default function Navbar() {
           width={32}
           height={32}
         />
-        <span className="text-xl font-bold text-gray-900 font-poppins">
+        <span className="text-xl font-bold text-gray-900 font-poppins hidden sm:inline">
           Statera
         </span>
       </Link>

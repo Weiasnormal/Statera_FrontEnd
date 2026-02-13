@@ -1,6 +1,7 @@
 'use client';
 
 import { useState } from 'react';
+import { useRouter } from 'next/navigation';
 import UpperDesign from "@/app/components/ui/Upper_Design";
 import Footer from "@/app/components/layout/footer";
 
@@ -9,6 +10,7 @@ interface Form2Props {
 }
 
 export default function Form2({ onNext }: Form2Props) {
+    const router = useRouter();
     const [selectedAnswers, setSelectedAnswers] = useState<Record<string, string>>({});
 
     const questions = [
@@ -82,10 +84,10 @@ export default function Form2({ onNext }: Form2Props) {
                         </div>
 
                         <button 
-                            onClick={onNext}
+                            onClick={() => router.push('/results')}
                             className="mt-12 px-6 py-2.5 bg-[#006B8F] text-white font-semibold rounded-full hover:bg-teal-700 transition-colors flex items-center gap-2 font-inter"
                         >
-                            Next
+                            Results
                             <span>→</span>
                         </button>
                     </div>

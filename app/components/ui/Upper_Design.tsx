@@ -31,7 +31,7 @@ export default function UpperDesign() {
           <div className="absolute bottom-0 right-0 w-96 h-64 bg-yellow-50/60 rounded-full blur-3xl -z-10"></div>
 
           {/* Step Cards */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-16">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-16 justify-items-center">
         {/* Step 1 Card */}
         <div className="bg-transparent backdrop-blur-sm border border-[#0099C0] rounded-3xl overflow-hidden transition-shadow" style={{maxWidth: '405px', width: '100%', height: '350px'}}>
           {/* Colored Header */}
