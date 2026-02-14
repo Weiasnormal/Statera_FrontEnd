@@ -30,7 +30,7 @@ export default function Form1() {
   return (
     <div className="min-h-screen bg-white">
       <UpperDesign />
-      <section className="px-4 py-16 bg-white">
+      <section className="px-4 ml-8 lg:ml-0 md:ml-0 sm:ml-0 py-16 bg-white">
         <div className="max-w-7xl mx-auto">
           <div className="flex items-center gap-4 mb-8">
             <p className="text-sm text-gray-500 font-inter">Step 1 of 2</p>

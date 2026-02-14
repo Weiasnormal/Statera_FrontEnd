@@ -49,12 +49,12 @@ export default function Footer() {
         </div>
 
         {/* Bottom Border and Copyright */}
-        <div className="border-t border-gray-200 mt-12 pt-8 flex flex-col md:flex-row justify-start items-start gap-4">
+        <div className="border-t border-gray-200 mt-12 pt-8 pb-4 flex flex-col md:flex-row justify-start items-start gap-4">
           <div className="flex gap-6">
             <a href="#" className="text-xs text-gray-600 hover:text-gray-900 transition-colors">
               Terms And Conditions
             </a>
-            <span className="text-gray-300">•</span>
+            <span className="text-gray-300 text-xs">•</span>
             <a href="#" className="text-xs text-gray-600 hover:text-gray-900 transition-colors">
               Privacy Policy
             </a>

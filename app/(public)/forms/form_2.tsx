@@ -50,7 +50,7 @@ export default function Form2({ onNext }: Form2Props) {
   return (
     <div className="min-h-screen bg-white">
       <UpperDesign />
-      <section className="px-4 py-16 bg-white">
+      <section className="px-4 ml-4 py-16 bg-white">
         <div className="max-w-7xl mx-auto">
           <div className="max-w-2xl">
             <div className="flex items-center gap-4 mb-12">
@@ -71,7 +71,7 @@ export default function Form2({ onNext }: Form2Props) {
                       <button
                         key={option.value}
                         onClick={() => handleSelect(question.id, option.value)}
-                        className={`px-6 py-3 rounded-full font-medium text-sm transition-all font-inter ${
+                        className={`px-6 py-3 rounded-full font-medium text-sm transition-all font-inter cursor-pointer ${
                           selectedAnswers[question.id] === option.value
                             ? "bg-[#0099C0] text-white"
                             : "bg-gray-200 text-gray-700 hover:bg-gray-300"
