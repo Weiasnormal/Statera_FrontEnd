@@ -4,6 +4,7 @@ import { useState } from "react";
 import { useRouter } from "next/navigation";
 import UpperDesign from "@/app/components/ui/Upper_Design";
 import Footer from "@/app/components/layout/footer";
+import LoadingPage from "@/app/components/loading/LoadingPage";
 
 interface Form2Props {
   onNext?: () => void;
@@ -14,6 +15,7 @@ export default function Form2({ onNext }: Form2Props) {
   const [selectedAnswers, setSelectedAnswers] = useState<
     Record<string, string>
   >({});
+  const [isLoading, setIsLoading] = useState(false);
 
   const questions = [
     {
@@ -46,6 +48,17 @@ export default function Form2({ onNext }: Form2Props) {
       [questionId]: value,
     }));
   };
+
+  const handleResultsClick = () => {
+    setIsLoading(true);
+    setTimeout(() => {
+      router.push("/results");
+    }, 2000);
+  };
+
+  if (isLoading) {
+    return <LoadingPage />;
+  }
 
   return (
     <div className="min-h-screen bg-white">
@@ -86,7 +99,7 @@ export default function Form2({ onNext }: Form2Props) {
             </div>
 
             <button
-              onClick={() => router.push("/results")}
+              onClick={handleResultsClick}
               className="mt-12 px-6 py-2.5 bg-[#006B8F] text-white font-semibold rounded-full hover:bg-teal-700 cursor-pointer transition-colors flex items-center gap-2 font-inter"
             >
               Results

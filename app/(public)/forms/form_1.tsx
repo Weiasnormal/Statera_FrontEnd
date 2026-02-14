@@ -1,28 +1,12 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import Form_2 from "./form_2";
-import LoadingPage from "@/app/components/loading/LoadingPage";
 import UpperDesign from "@/app/components/ui/Upper_Design";
 import Footer from "@/app/components/layout/footer";
 
 export default function Form1() {
   const [showForm2, setShowForm2] = useState(false);
-  const [showLoading, setShowLoading] = useState(false);
-
-  useEffect(() => {
-    if (showLoading) {
-      const timer = setTimeout(() => {
-        setShowLoading(false);
-        setShowForm2(true);
-      }, 1000);
-      return () => clearTimeout(timer);
-    }
-  }, [showLoading]);
-
-  if (showLoading) {
-    return <LoadingPage />;
-  }
 
   if (showForm2) {
     return <Form_2 onNext={() => console.log("Form 2 next clicked")} />;
@@ -59,7 +43,7 @@ export default function Form1() {
             </div>
 
             <button
-              onClick={() => setShowLoading(true)}
+              onClick={() => setShowForm2(true)}
               className="px-6 py-2 bg-[#006B8F] text-white font-semibold rounded-full hover:bg-teal-700 cursor-pointer transition-colors flex items-center gap-2 font-inter"
             >
               Next
